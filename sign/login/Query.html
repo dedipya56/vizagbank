@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <script src="Query.js"> </script>
+   </head>
+
+   <script>
+       function suc()
+       {
+         alert("Sent");
+      }
+   </script> 
+<body>
+
+   <nav class="nav-main"> 
+        <div class="btn-toggle-nav" onclick="toggleNav()">
+        </div>
+        <ul>
+            <li><a href="customer.html">Home</a></li>
+            <li><a href="Rates and charges.html">Rates and Charges</a></li>
+            <li><a href="Loan_info.html">Loan Info</a></li>
+            <li><a href="#">Query</a></li>
+            <li><a href="Services.html">Our services</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="view.php">View Details</a></li>
+            <li><a href="View_Transactions.php">View Transactions</a></li>
+            <li><a href="checkbal.php">Check Balance</a></li>
+        </ul>
+    </nav>
+
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Applying Online</span></li>
+            <li><a href="cheque.html">Apply Cheque</a></li>
+            <li><a href="Apply_Debit.html">Apply Debit</a></li>
+            <li><a href="Apply_Loan.html">Apply Loan</a></li>
+            <li><a href="Apply_Credit.html">Apply Credit</a></li>
+            <li><a href="Make_Transaction.html">Make Transaction</a></li>
+        </ul>
+    </aside>
+     
+  <div class="wrapper">
+    <div class="image">
+        <img src="logo.jpg">
+    </div>
+    <h2>QUERY</h2>
+    <form>
+       
+      <div class="input-box">
+        <input type="text" placeholder="Your Mail ID" required>
+      </div>
+      
+      <div class="input-box">
+        
+        <textarea placeholder="write your complaints" ></textarea>
+      </div>
+      
+      
+      <div class="btn">
+        <input type="Submit" value="Send" onclick="suc()">
+      </div>
+    
+    </form>
+  </div>
+  <ul class="socialmedia">
+        <li>
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.whatsapp.com">
+                <i class="fab fa-whatsapp-square"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.twitter.com">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </li>
+</ul>
+
+</body>
+</html>

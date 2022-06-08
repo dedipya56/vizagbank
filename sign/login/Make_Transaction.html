@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Transaction</title>
+    <link href="Make_Transaction.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+</head>
+<body>
+    <nav class="nav-main"> 
+        <div class="btn-toggle-nav" onclick="toggleNav()">
+        </div>
+        <ul>
+            <li><a href="customer.html">Home</a></li>
+            <li><a href="Rates and charges.html">Rates and Charges</a></li>
+            <li><a href="Loan_info.html">Loan Info</a></li>
+            <li><a href="Query.html">Query</a></li>
+            <li><a href="Services.html">Our services</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="view.php">View Details</a></li>
+            <li><a href="View_Transaction.php">View Transactions</a></li>
+            <li><a href="checkbal.php">Check Balance</a></li>
+        </ul>
+    </nav>
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Applying Online</span></li>
+            <li><a href="cheque.html">Apply Cheque</a></li>
+            <li><a href="Apply_Debit.html">Apply Debit</a></li>
+            <li><a href="Apply_Loan.html">Apply Loan</a></li>
+            <li><a href="Apply_Credit.html">Apply Credit</a></li>
+            <li><a href="Update.html">Update Details</a></li>
+            <li><a href="#">Make Transaction</a></li>
+        </ul>
+    </aside>
+    <form method="post" action="Make_Transaction.php">
+        <div class="container">
+            <h1>Make Transaction</h1>
+            <div class="first-row">
+                <div class="receiver">
+                    <h3 style="padding-left:20px;" >Receiver Name</h3>
+                    <div class="input_field">
+                        <input type="text" name="rname" value="" style="height:30px;width: 250px;  margin-left: 20px;" required="true">
+                    </div>
+                </div>
+                <div class="raccno">
+                    <h3 >Receiver Acc No:</h3>
+                   
+                    <div class="input_field">
+                        <input type="tel" name="racc" value="" maxlength="10" style="height:30px;width: 250px;" id="racc" required="true"> 
+                    </div>
+                 </div>
+             </div>
+                    <div class="second-row">
+                       <div class="Cardno">
+                         <h3 style="padding-left:20px;">Card number</h3>
+                         <div class="input_field">
+                             <input type="tel" name="cnum" value="" required style="height:30px;width: 250px; margin-left: 20px;" maxlength="10" required="true">
+                         </div>
+                       </div>
+                       <div class="cardcvv">
+                         <h3>CVV</h3>
+                         <div class="input_field">
+                             <input type="tel" name="cvv" value="" required style="height:30px;width: 250px;" maxlength="3" required="true">
+                         </div>
+                       </div>
+                     </div>
+                     <div class="fourth-row">
+                         <div class="Amount">
+                           <h3 style="padding-left:20px;">Amount</h3>
+                           <div class="input_field">
+                               <input type="tel" name="amount" value="" required style="height:30px;width: 250px; margin-left: 20px;" required="true">
+                           </div>
+                           </div>
+                           <div class="confamt">
+                               <h3>Confirm Amt</h3>
+                               <div class="input_field">
+                                 <input type="tel" name="amount" value="" required style="height:30px;width: 250px;" required="true" id="amount">
+                               </div>
+                           </div>
+     
+                     </div>
+                     <div class="Third-row">
+                             <h3 style="padding-left:20px;">Card Details</h3>
+                             <div class="selection" style="margin-left:20px;">
+                               <div class="date">
+                                   <select name="month" id="months">
+                                       <option value="Jan">Jan</option>
+                                       <option value="Feb">Feb</option>
+                                       <option value="Mar">Mar</option>
+                                       <option value="Apr">Apr</option>
+                                       <option value="May">May</option>
+                                       <option value="Jun">Jun</option>
+                                       <option value="Jul">Jul</option>
+                                       <option value="Aug">Aug</option>
+                                       <option value="Sep">Sep</option>
+                                       <option value="Oct">Oct</option>
+                                       <option value="Nov">Nov</option>
+                                       <option value="Dec">Dec</option>
+                                   </select>
+                                   <select name="year" id="years">
+                                     <option value="2022">2022</option>
+                                     <option value="2023">2023</option>
+                                     <option value="2024">2024</option>
+                                     <option value="2025">2025</option>
+                                     <option value="2026">2026</option>
+                                     <option value="2027">2027</option>
+                                     <option value="2028">2028</option>
+                                   </select>
+     
+                               </div>
+                               <div class="cards">
+                                      <img src="images/makeTrans/images.png">
+                                      <img src="images/makeTrans/master.png">
+                                      <img src="images/makeTrans/rupay.jpg">
+                             </div>
+                             </div>
+                         </div>
+                         <div class="submit">
+                             <button style="width:65%; height:45px; margin-left:140px; margin-top: 20px;" >
+                                <input type="submit" name="submit"   value="Confirm"></button>
+                         </div>
+                   
+                     </div>
+         </div>
+     
+    </form>
+    <ul class="socialmedia" >
+        <li>
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.whatsapp.com">
+                <i class="fab fa-whatsapp-square"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.twitter.com">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </li>
+</ul>
+    <script>
+          function search()
+        {
+            $.ajax({
+                type : 'POST',
+                url : "maketrans.jsp",
+                data : { },
+                success : function(data){
+
+                }
+
+            })
+        }
+    </script>
+  <script src="Make_Transaction.js"></script>
+</body>
+</html>

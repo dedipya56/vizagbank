@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel ="stylesheet" href="./form.css">
+    <style>
+        input{
+            background-color: white;
+        }
+    </style>
+</head>
+<body style="background-image:  url('https://bsmedia.business-standard.com/_media/bs/img/article/2018-07/18/full/1531852476-8493.jpg');background-size: cover; background-repeat: no-repeat;">
+    <form action="signin.php" method="POST" style="width: 50%; text-align: center; margin-left:25%;margin-bottom: 50px; margin-top: 30px;">  
+        <h2 style="text-align:centre;">Sign In</h2>  
+         <hr>
+          
+        <p>
+            <label for="accno1">ACCOUNT NO. :</label>
+            <input type="number" placeholder="Enter Account No." name="accno" class="input" required>
+        </p>
+        
+        <p>
+            <label for="psw1">PASSWORD :</label>
+            <input type="password" placeholder="Enter Password" name="psw" class="input" required>
+        </p>
+       
+            <p> 
+                <label for="type">Designation :</label>
+                <select name="type"  title="Choose designation type" required>
+                    <option value="cus">Custumer</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </p>
+      
+        
+        <button  type="submit" value="submit" title="click me to SignIn" class="btn">Sign In</button>
+    </form>
+    <a href="./signup.html"><button style="width: auto; margin: 0 300px;" title="click me to go to signup page">SignUp</button></a> 
+    <a href="../home.html"><button style="width: auto; margin: 0 300px;" title="click me to go Back">Back</button></a> 
+     
+</body>
+</html>

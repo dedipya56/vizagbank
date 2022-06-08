@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <div w3-include-html="nav.html"></div>
+    <script src="https://kit.fontawesome.com/3da4f03368.js" crossorigin="anonymous"></script>
+    <link href="./style.css" rel="stylesheet">
+    <script>
+        function more(){
+            document.getElementById("dli").style.display="block";
+            document.getElementById("arr").style.display="none";
+        }
+        function less(){
+            document.getElementById("dli").style.display="none";
+            document.getElementById("arr").style.display="block";
+        }
+    </script>
+</head>
+<body >
+    <a href="./home.html"  title="Go to previous page" style="text-decoration:none; margin:15px; font-size:15px;"><i class="fas fa-arrow-circle-left" style=" margin:15px; font-size:25px;"></i></a>
+    
+    <div class="container1">  
+        <div class="tabs">  
+             <input type="radio" id="radio-1" name="tabs" checked />  
+             <label class="tab" for="radio-1" onclick="window.location.href='./home.html'">Home</label>  
+             <input type="radio" id="radio-2" name="tabs" />  
+             <label class="tab" for="radio-2"><a href="./about.html">About</a></label>  
+             <input type="radio" id="radio-3" name="tabs" />  
+             <label class="tab" for="radio-3"> <a href="./contactUs.html">Contact Us</a></label> 
+             <input type="radio" id="radio-4" name="tabs"  />  
+             <label class="tab" for="radio-4"  onclick="window.location.href='./faq.html'">FAQs</label>  
+             <input type="radio" id="radio-5" name="tabs"  />  
+             <label class="tab" for="radio-5"><a href="./sign/signup.html">👨🏻‍🎓</a></label>  
+             <span class="glider"></span>  
+        </div>  
+    </div>  
+    <br>
+    
+<p id="element">FAQ</p>
+    <dl >
+        <dt>What is vizagbank?</dt>
+        <dd>vizagbank is the Internet banking service provided by State Bank of India, India's largest and premier commercial bank</dd>
+        <dt>What is special about Internet banking?</dt>
+        <dd>Internet banking is the most convenient way to bank- anytime, any place, at your convenience.</dd>
+        <dt> I do not have a PC?</dt>
+        <dd>You can access vizagbank from any computer that has connectivity to the Internet. But make sure your computer is Malware free. For more details please Click here.</dd>
+        <dt>How do I access vizagbank?</dt>
+        <dd>You need to have an account at a branch. You also need to register for the Internet banking service with the branch. Branch will provide you a Pre Printed Kit (PPK) containing username and password for first login. If you are not in a position to collect PPK in person, the bank will arrange to send a username through SMS and a mailer containing password to your registered address. Logon to www.vizagbank.com using this username and password. At the first login, you will need to go through a simple initialization process. Our Net banking assistant will guide you step by step through this process on the site.</dd>
+        <button  class="arr" id="arr" onclick="more()" title="Show More">↡</button>
+        <div id="dli">
+        <dt>I do not have an account with VB?</dt>
+        <dd>You are welcome to open it now. It is very easy to open an account with VB. You can apply online for opening of a savings bank account. A link 'Online SB Account Application' is available on the home page of www.vizagbank.com or just walk in to any of our branches nearby. Our staff would be pleased to assist you.</dd>
+        <dt>I am an Indian Resident. How do I open an account?</dt>
+        <dd>Follow the below simple steps:
+
+            You can apply online for opening of a savings bank account. A link 'Online SB Account Application' is available on the home page of www.vizagbank.com OR You can collect the account opening form from a branch or download it from www.vizagbank.com under the link Registration Forms. ...</dd>
+        <dt> I am a Non-resident Indian. How do I open an account?</dt>
+        <dd>If you are on a visit to India, please follow the procedure described for a resident Indian. Please carry your passport also.If you want to open the account when you are outside India:
+
+            Collect and fill the NRI Application Form....</dd>
+        <dt>Can my school going daughter open such account?</dt>
+        <dd>Of course. Children of any age can have joint accounts with their parent or guardian.Children above 10 years of age can have their own bank account, subject to certain financial limits.</dd>
+        <dt>I want to register for vizagbank now. What do I do?</dt>
+        <dd>Download the Registration Forms in the vizagbank site, complete the form and submit it at your branch. Your registration formalities are complete after your details are verified and authenticated by the branch</dd>
+        <dt>Why are the user name and password so cryptic?</dt>
+        <dd>The user name and password are system generated. vizagbank has no control over this process. During your first visit to vizagbank, you must mandatorily change your user name and password.</dd>
+        <button class="arr" onclick="less()" title="Show Less">↟</button>    
+    </div>
+        
+    </dl>
+</body>
+</html>

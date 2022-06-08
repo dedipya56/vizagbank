@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VizagBank</title>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+   
+    <link href="./nav.css" rel="stylesheet">
+   <link href="./home.css" rel="stylesheet"> 
+    <style>
+   .contai{
+     display:flex;
+   }
+   .slider{
+     margin: 5%;
+   }
+ </style>
+</head>
+<body style="background-image:url('./images/blue-BG.jpg');">
+ <!--<iframe src="./nav.html" style="width: 100%;"></iframe>-->
+  
+  
+  <div class="container1" style="margin-top: 10px;">  
+    <div class="tabs">  
+         <input type="radio" id="radio-1" name="tabs" checked />  
+         <label class="tab" for="radio-1" onclick="window.location.href='./home.html'">Home</label>  
+         <input type="radio" id="radio-2" name="tabs" />  
+         <label class="tab" for="radio-2"onclick="window.location.href='./about.html'">About</label>  
+         <input type="radio" id="radio-3" name="tabs" />  
+         <label class="tab" for="radio-3" onclick="window.location.href='./contactUs.html'">Contact Us</label> 
+         <input type="radio" id="radio-4" name="tabs"  />  
+         <label class="tab" for="radio-4"  onclick="window.location.href='./faq.html'">FAQs</label> 
+         
+         <input type="radio" id="radio-5" name="tabs"  />  
+         <label class="tab" for="radio-5" onclick="window.location.href='./sign/signin.html'">👨🏻‍🎓</label>  
+         <span class="glider"></span>  
+    </div>  
+</div>  
+
+<h1 id="emo" >👑</h1>
+<h1 id="bank1" style="margin-left: 30px;" >Vizag Bank</h1>
+
+<br>
+
+<div class="contai">
+   
+ <div class="slider">
+  <div class="slideimg">
+      <img src="./images/b1.jpg">
+      <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/201806/bad-bank_660_061118064321_061418070633.jpg?size=1200:675">
+      <img src="./images/b2.jpg">
+      <img src="https://images.hindustantimes.com/img/2021/08/28/550x309/bb6e869c-7852-11eb-9f3a-4bf8b25be612_1614505842623_1614505866750_1630152143681_1630152159176.jpg">
+      <img src="./images/b3.jpg">
+   </div>
+ </div><br>
+  <div> 
+    <h3 style="margin:20px ;margin-top: 30%;" id="bank">Get your account to start spending,sending,saving in minutes.</h3>
+
+  </div>
+
+
+</div>
+
+<div w3-include-html="footer.html"></div>
+<script>w3IncludeHTML();</script>
+
+</body>
+</html>

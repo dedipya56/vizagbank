@@ -1,0 +1,248 @@
+
+*{
+
+
+  box-sizing: border-box;
+  
+
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin-left: 0;
+    min-height: 100vh;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  background :linear-gradient(195deg,hsl(136,65%,51%),rgb(25, 192, 114));;
+}
+
+.nav-main{
+    width: 100%;
+    height: 60px;
+    background-color:#FFF;
+    display: flex;
+    flex-wrap: wrap;
+    z-index : 1000;
+    position:fixed;
+    top:0;
+
+}
+.btn-toggle-nav{
+    width: 60px;
+    height: 100%;
+    background:url("images/customer/menu.png");
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:center;
+    cursor:pointer;
+
+}
+.nav-main ul{
+    display:flex;
+    flex-wrap:wrap;
+    padding-left: 15px;
+    margin-top: 3px;
+}
+.nav-main ul li{
+    list-style: none;
+    line-height: 60px;
+}
+.nav-main ul li a{
+    display : block;
+    padding:0 10px;
+    height : 100%;
+    text-transform:uppercase;
+    text-decoration: none;
+    color: #111;
+    font-family: arial;
+    font-size: 16px;
+}
+.nav-main ul li a:hover{
+    opacity: 0.7;
+}
+.btn-toggle-nav:hover{
+    opacity: 0.5;
+    
+}
+.nav-sidebar{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100%;
+    padding: 0 5px;
+    background-color:#1b1b1b;
+    
+}
+.nav-sidebar ul{
+    padding-top: 35px;
+    overflow:hidden;
+    visibility:hidden;
+   
+ 
+ }
+
+.nav-sidebar ul li{
+    line-height: 60px;
+    list-style:none;
+}
+.nav-sidebar ul li span,.nav-sidebar ul li a{
+    display: block;
+    height: 60px;
+    text-decoration : none;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 16px;
+    color:#FFF;
+    white-space:nowrap;
+    opacity : 0;
+
+
+}
+.nav-sidebar ul li a:hover{
+    background-color: #222;
+}
+
+
+.wrapper{
+ 
+  max-width: 430px;
+  width: 100%;
+  height: auto;
+ 
+ background: #fff;
+  padding: 34px;
+   border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.wrapper h2{
+  
+  font-size: 22px;
+  font-weight: 600;
+  color: hsl(136, 97%, 49%)
+}
+
+
+
+.wrapper form{
+  margin-top: 30px;
+}
+
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+
+form .input-box input{
+    height: 100%;
+  width: 100%;
+  
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(44, 39, 39);
+  border: 1.5px solid #b9b6b6;
+  border-bottom-width: 2.5px;
+border-radius: 6px;
+  transition: all 0.6s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: hsl(136, 97%, 49%);
+}
+
+
+form .policy{
+  display: flex;
+  align-items: center;
+}
+
+
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+
+
+.btn input{
+  color: #fff;
+  letter-spacing: 1px;
+   border-width: 0px;
+   background-image: linear-gradient(120deg,hsl(136,65%,51%),hsl(192,70%,51%));
+  cursor: pointer;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 120px;
+  margin-bottom: 30px;
+}
+.btn input:hover{
+  background: hsl(136, 97%, 49%);
+  border-color: hsl(136, 97%, 49%);
+  background-image: linear-gradient(120deg,hsl(136, 97%, 49%),rgb(85, 179, 202));
+  border-width: 1px;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: right;
+}
+form .text h3 a{
+  color: #4070f4;
+  text-decoration: none;
+}
+
+.socialmedia{
+    float:right;
+    list-style: none;
+    font-size : 50px;
+    padding-top: 200px;
+
+}
+.fab{
+    padding-bottom: 8px;
+    color: black;
+    
+}
+.fab:hover{
+    cursor: pointer;
+    transform : translateY(7px);
+    opacity : 0.7;
+    color: white;
+}
+
+
+.image>img{
+    width: 60px;
+    height: 60px;
+    margin-left: 9rem;
+}
+
+
+
+.input-box textarea{
+    height: 100%;
+  width: 100%;
+  
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(44, 39, 39);
+  border: 1.5px solid #b9b6b6;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.6s ease;
+  height: 52px;
+  margin: 18px 0;
+}
